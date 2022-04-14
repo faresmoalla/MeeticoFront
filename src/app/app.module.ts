@@ -12,6 +12,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
+import { PublicationAddComponent } from './pages/publication-add/publication-add.component';
+import { PublicationAjoutComponent } from './pages/publication-management/publication-ajout/publication-ajout.component';
 
 
 @NgModule({
@@ -27,9 +29,13 @@ import { ComponentsModule } from './components/components.module';
   declarations: [
     AppComponent,
     AdminLayoutComponent,
-    AuthLayoutComponent
+    AuthLayoutComponent,
+
   ],
   providers: [],
+  exports: [
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
